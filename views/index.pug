@@ -1,0 +1,11 @@
+doctype html
+html
+    include includes/head.pug
+    body
+        div.container
+            div.card
+                h1 zettelkasten
+                button(type="submit" id="chooseFolderButton") Choose Folder
+                input(type="file" id="folderInput")
+
+        script(src="/index.js" type="module")
