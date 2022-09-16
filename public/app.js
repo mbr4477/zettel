@@ -68,6 +68,11 @@ window
         .join("a")
         .attr("href", (d) => "file:///" + d.path);
 
+      a.selectAll("title")
+        .data((d) => [d])
+        .join("title")
+        .text((d) => d.name);
+
       a.selectAll("circle")
         .data((d) => [d])
         .join("circle")
@@ -75,7 +80,8 @@ window
         .attr("cx", (d) => d.x)
         .attr("cy", (d) => d.y)
         .style("fill", "#3eb489")
-        .style("stroke-width", 0);
+        .style("stroke-width", 0)
+        .attr("title", (d) => d.name);
 
       a.selectAll("text")
         .data((d) => [d])
