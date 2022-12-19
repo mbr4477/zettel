@@ -1,5 +1,5 @@
 import * as d3force from "https://cdn.skypack.dev/d3-force@3";
-import * as d3 from "https://cdn.skypack.dev/d3";
+import * as d3 from "https://cdn.skypack.dev/d3@7.6.1";
 
 const width = window.innerWidth;
 const height = window.innerHeight;
